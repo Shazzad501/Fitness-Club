@@ -28,6 +28,17 @@ section {
   max-width: 1440px;
   margin: auto auto 100px auto;
 }
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.section-description {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px auto;
+  color: var(--secondery-color);
+}
 .btn {
   font-size: 1.15rem;
   font-weight: 600;
@@ -148,7 +159,7 @@ section {
   bottom: 70px;
   right: 250px;
 }
-.updiv-1-t{
+.updiv-1-t {
   background: none;
 }
 .updiv-1-t h4 {
@@ -156,7 +167,7 @@ section {
   font-weight: 900;
   background: none !important;
 }
-.updiv-1-t p{
+.updiv-1-t p {
   font-size: 1rem;
   font-weight: 400;
   background: none !important;
@@ -198,28 +209,69 @@ section {
 .redius span {
   background: none;
 }
-.redius span i{
+.redius span i {
   display: none;
-  font-size:1.25rem;
+  font-size: 1.25rem;
   background: none !important;
 }
 /* Banner section end */
 
-/* nav and banner media query */
-@media screen and (max-width:576px){
+/* Change your habite saction style start */
+.habite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.habite-content {
+  text-align: center;
+}
+
+.habite-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.habite-card div {
+  display: flex;
+  padding:20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.habite-card div img {
+  border-radius: 50%;
+}
+.habite-card div h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px auto 10px auto;
+  color: var(--primary-color);
+}
+.habite-card div p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondery-color);
+}
+
+/* Change your habite saction style end */
+
+/* media query */
+@media screen and (max-width: 576px) {
   .navbar {
-    max-width:100%;
+    max-width: 100%;
     height: 100px;
     padding-left: 20px;
     padding-right: 20px;
   }
   .desktop {
-    display:none;
+    display: none;
   }
 
   .mobile {
-    display:block;
-    font-size:1.5rem;
+    display: block;
+    font-size: 1.5rem;
   }
   .brand h3 {
     font-size: 2.25rem;
@@ -270,13 +322,13 @@ section {
     align-items: center;
     padding-top: 30px;
   }
-  .banner-img img{
+  .banner-img img {
     width: 100%;
   }
   .updiv-1 {
     position: absolute;
-    bottom: 200px;
-    right: 130px;
+    bottom: 70px;
+    right: 140px;
   }
   .updiv-2 {
     width: 11.06rem;
@@ -285,7 +337,6 @@ section {
     right: -15px;
     align-items: start;
     padding: 15px;
-
   }
   .updiv-2 h4 {
     text-align: start;
@@ -295,7 +346,7 @@ section {
     font-size: 0.8rem;
   }
 
-  .redius span i{
+  .redius span i {
     display: block;
   }
   .btn-2 {
@@ -306,17 +357,17 @@ section {
     padding: 10px 20px 10px 20px;
     border-radius: 42px;
   }
-  .btn-1{
+  .btn-1 {
     font-size: 1rem;
     font-weight: 600;
     background: var(--btn-color);
     padding: 10px 20px 10px 20px;
     border-radius: 42px;
   }
-  .btn-div{
+  .btn-div {
     width: 100%;
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
@@ -324,5 +375,21 @@ section {
     font-size: 3rem;
     font-weight: 900;
   }
+  /* habite section  */
+  .habite {
+    width: 100%;
+    margin-top:-80px;
+
+  }
+ .habite-content .section-title{
+  font-size: 2rem;
+ }
+  
+  .habite-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+ 
 }
 /* nav and banner media query */
