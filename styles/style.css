@@ -13,6 +13,7 @@
   color: var(--primary-color);
   /* font-family: "Dancing Script", cursive; */
 }
+
 /* universal tag style end */
 
 /* Sheard style start */
@@ -23,16 +24,30 @@
   --primary-color: rgb(255, 255, 255);
   --secondery-color: rgba(255, 255, 255, 0.5);
 }
+section {
+  max-width: 1440px;
+  margin: auto auto 100px auto;
+}
+.btn {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  background: var(--btn-color);
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+}
 /* Sheard style end */
 
 /* navigation bar style start */
 .navbar {
-  max-width:1300px;
+  max-width: 1440px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 40px auto;
+  margin: auto auto;
   justify-content: space-between;
+  background-color: var(--default-color);
 }
 .menu-item {
   display: flex;
@@ -56,7 +71,7 @@
 .desktop p a {
   text-decoration: none;
 }
-.desktop div a{
+.desktop div a {
   text-decoration: none;
 }
 #p-1 {
@@ -76,3 +91,238 @@
   color: var(--btn-color);
 }
 /* navigation bar style end */
+
+/* Banner section start */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--default-color);
+}
+.banner-content {
+  text-align: start;
+  max-width: 50%;
+}
+.banner-content h3 {
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+.banner-content h3 span {
+  font-family: "Dancing Script", cursive;
+}
+.banner-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 2rem auto;
+}
+.btn-2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  margin-left: 1.25rem;
+}
+.banner-img {
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.updiv-1 {
+  width: 12.8rem;
+  height: 6rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54) !important;
+  position: absolute;
+  bottom: 70px;
+  right: 250px;
+}
+.updiv-1-t{
+  background: none;
+}
+.updiv-1-t h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: none !important;
+}
+.updiv-1-t p{
+  font-size: 1rem;
+  font-weight: 400;
+  background: none !important;
+}
+.updiv-2 {
+  width: 12.8rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 350px;
+  right: -100px;
+}
+.updiv-2 h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: none !important;
+}
+.updiv-2 p {
+  font-size: 1rem;
+  font-weight: 400;
+  background: none !important;
+}
+.redius {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn-color);
+  border-radius: 50%;
+}
+.redius span {
+  background: none;
+}
+.redius span i{
+  display: none;
+  font-size:1.25rem;
+  background: none !important;
+}
+/* Banner section end */
+
+/* nav and banner media query */
+@media screen and (max-width:576px){
+  .navbar {
+    max-width:100%;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .desktop {
+    display:none;
+  }
+
+  .mobile {
+    display:block;
+    font-size:1.5rem;
+  }
+  .brand h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--btn-color);
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--default-color);
+  }
+  .banner-content {
+    text-align: start;
+    max-width: 100%;
+  }
+  .banner-content h3 {
+    font-size: 4.8rem;
+    font-weight: 900;
+  }
+  .banner-content h3 span {
+    font-family: "Dancing Script", cursive;
+  }
+  .banner-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2rem auto;
+  }
+  .btn-2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    margin-left: 1.25rem;
+  }
+  .banner-img {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .banner-img img{
+    width: 100%;
+  }
+  .updiv-1 {
+    position: absolute;
+    bottom: 200px;
+    right: 130px;
+  }
+  .updiv-2 {
+    width: 11.06rem;
+    position: absolute;
+    bottom: 440px;
+    right: -15px;
+    align-items: start;
+    padding: 15px;
+
+  }
+  .updiv-2 h4 {
+    text-align: start;
+  }
+  .updiv-2 p {
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .redius span i{
+    display: block;
+  }
+  .btn-2 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-1{
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--btn-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-div{
+    width: 100%;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content h3 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+/* nav and banner media query */
