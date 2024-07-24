@@ -30,17 +30,19 @@ section {
 }
 .section-title {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--primary-color);
 }
 .section-description {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 20px auto;
+  line-height: 23px;
   color: var(--secondery-color);
 }
 .btn {
-  font-size: 1.15rem;
+  cursor: pointer;
+  font-size: 1rem;
   font-weight: 600;
   border: none;
   background: var(--btn-color);
@@ -53,6 +55,8 @@ section {
 .navbar {
   max-width: 1440px;
   height: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -107,12 +111,14 @@ section {
 .banner {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-between;
   background: var(--default-color);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .banner-content {
   text-align: start;
-  max-width: 50%;
+  width: 50%;
 }
 .banner-content h3 {
   font-size: 4.8rem;
@@ -127,7 +133,8 @@ section {
   margin: 2rem auto;
 }
 .btn-2 {
-  font-size: 1.15rem;
+  cursor: pointer;
+  font-size: 1rem;
   font-weight: 600;
   border: 1px solid rgb(255, 255, 255);
   background: transparent;
@@ -137,11 +144,12 @@ section {
 }
 .banner-img {
   position: relative;
-  max-width: 50%;
+  width: 50%;
+  padding-left: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: center;
-  align-items: center;
+  align-items:center;
 }
 
 .updiv-1 {
@@ -157,7 +165,7 @@ section {
   background: rgba(48, 48, 48, 0.54) !important;
   position: absolute;
   bottom: 70px;
-  right: 250px;
+  right: 370px;
 }
 .updiv-1-t {
   background: none;
@@ -185,7 +193,7 @@ section {
   background: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 350px;
-  right: -100px;
+  right: -10px;
 }
 .updiv-2 h4 {
   font-size: 1.5rem;
@@ -234,7 +242,7 @@ section {
 }
 .habite-card div {
   display: flex;
-  padding:20px;
+  padding: 20px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -260,30 +268,31 @@ section {
 /* Run section style start */
 .run {
   display: flex;
-  flex-direction:row;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 50px;
   background: var(--bg-color);
 }
 .run-content {
-width: 48%;
-text-align: start;
-background: none;
-}
-.run-content h3, p{
+  width: 48%;
+  text-align: start;
   background: none;
 }
-.run-content button{
+.run-content h3,
+p {
+  background: none;
+}
+.run-content button {
   margin-top: 20px;
 }
-.run-img{
+.run-img {
   width: 400px;
   height: 350px;
   border-radius: 24px !important;
   background: none;
   overflow: hidden;
 }
-.run-img img{
+.run-img img {
   width: 100%;
   height: 100%;
   transform: scale(1.8);
@@ -291,6 +300,370 @@ background: none;
 }
 /* Run section style end */
 
+/* What's the benifite styles start */
+.benifit-header-content {
+  text-align: center;
+}
+.benifit-main-content {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.benifit-content-1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+}
+.benifit-content-1 h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.benifit-img {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benifit-content-2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.benifit-content-2 h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* What's the benifite styles end */
+
+/* gym every day section style start */
+.gym {
+  display: flex;
+  padding: 50px 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.gym-content {
+  width: 55%;
+
+  padding-left: 50px;
+}
+.gym-img {
+  width: 40%;
+}
+.gym-img img {
+  width: 100%;
+  border-radius: 24px;
+  filter: brightness(60%);
+}
+
+/* gym every day section style end */
+
+/* BMI calculator section styles start */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 30px;
+}
+.header-content div{
+  width: 60%;
+  margin: auto auto;
+}
+.main-content {
+  max-width: 100%;
+  background-color: var(--bg-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.main-content .bmi-content {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  margin: auto auto;
+  background: none;
+}
+.bmi-table {
+  width: 40%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 50px;
+  padding-right: 120px;
+}
+.bmi-table h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--bg-color);
+  margin-bottom: 30px;
+}
+.bmi-table table {
+  background-color: var(--bg-color);
+  text-align: start;
+  border-collapse: collapse;
+  border: 1px solid var(--secondery-color);
+}
+.bmi-table table tr td span {
+  font-weight: 800;
+  background: none;
+  color: var(--secondery-color);
+}
+.bmi-table table td {
+  background-color: var(--bg-color);
+  padding: 15px 20px;
+  border: 1px solid var(--secondery-color);
+  color: var(--secondery-color);
+}
+.bmi-calculator {
+  width: 50%;
+  background-color: var(--bg-color);
+  padding-right: 50px;
+}
+.bmi-calculator h4 {
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--bg-color);
+}
+.bmi-calculator .form {
+  background-color: var(--bg-color);
+  margin: 30px auto;
+}
+#activity {
+  display: block;
+  width: 100%;
+  background-color: rgba(230, 227, 227, 0.1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 12px 10px;
+  color: var(--secondery-color);
+  font-weight: 600;
+}
+#sex {
+  width: 49%;
+  background-color: rgba(230, 227, 227, 0.1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 12px 10px;
+  color: var(--secondery-color);
+  font-weight: 600;
+}
+.form input {
+  width: 49%;
+  background-color: rgba(230, 227, 227, 0.1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 12px 10px;
+}
+#height {
+  margin-right: 1%;
+}
+#age {
+  margin-right: 1%;
+}
+/* BMI calculator section styles end */
+
+/* Meet our team section style start */
+.team{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.team p {
+  margin-bottom: 50px;
+}
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-img {
+  background-color: var(--bg-color) !important;
+  padding: 30px;
+  border-radius: 24px;
+}
+.team-img img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+}
+.team-img-row-1 > div {
+  border-radius: 24px;
+  background: none;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+}
+.team-img-row-1 div div {
+  position: absolute;
+  background: none;
+  top: 270px;
+  left: 30px;
+}
+.team-img-row-1 div h4 {
+  background: none;
+}
+.team-img-row-1 div h4 {
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.team-img-row-1 div p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.team-img-row-1 {
+  background: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.team-img-row-2 > div {
+  border-radius: 24px;
+  background: none;
+  height: 340px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.team-img-row-2 div div {
+  background: none;
+  position: absolute;
+  top: 270px;
+  left: 30px;
+}
+.team-img-row-2 div h4 {
+  background: none;
+}
+.team-img-row-2 div h4 {
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.team-img-row-2 div p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.team-img-row-2 {
+  background: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Meet our team section style end */
+
+footer {
+  width: 100%;
+  background: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer {
+  max-width: 1440px;
+  margin: auto auto;
+  background: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.foot-main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: start;
+  align-items: start;
+  background: none;
+}
+.foot-main div ul {
+  background: var(--bg-color);
+}
+.foot-main div ul li {
+  background: none;
+  list-style: none;
+}
+.foot-main-1 {
+  width: 40%;
+  background: var(--bg-color);
+}
+.foot-main-1 h3 {
+  font-size: 4rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--btn-color);
+  background-color: var(--bg-color);
+}
+.foot-main-2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+}
+.foot-main-2 h4 {
+  font-size: 2.2rem;
+  background: var(--bg-color);
+  font-weight: 700px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.foot-main-2 li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--secondery-color);
+}
+.foot-main-3 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+}
+.foot-main-3 h4 {
+  font-size: 2.2rem;
+  background: var(--bg-color);
+  font-weight: 700px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.foot-main-3 li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--secondery-color);
+}
+.footer hr {
+  width: 100%;
+  margin: 70px auto 30px auto;
+}
+.foot-copy{
+  width: 100%;
+  text-align: center;
+  background: var(--bg-color);
+}
+.foot-copy p{
+  font-size: 1.1rem;
+  color: var(--secondery-color);
+}
 /* media query */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -324,7 +697,7 @@ background: none;
   }
   .banner-content {
     text-align: start;
-    max-width: 100%;
+    width: 100%;
   }
   .banner-content h3 {
     font-size: 4.8rem;
@@ -337,6 +710,9 @@ background: none;
     font-size: 1rem;
     font-weight: 400;
     margin: 2rem auto;
+  }
+  .banner-content p br{
+    display: none;
   }
   .btn-2 {
     font-size: 1.15rem;
@@ -354,21 +730,23 @@ background: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-left: 0px;
+    padding-top: 70px;
   }
   .banner-img img {
     width: 100%;
   }
   .updiv-1 {
     position: absolute;
-    bottom: 70px;
-    right: 140px;
+    bottom: 30px;
+    right: 120px;
+    width: 10.06rem;
   }
   .updiv-2 {
-    width: 11.06rem;
+    width: 10.06rem;
     position: absolute;
-    bottom: 440px;
-    right: -15px;
+    bottom: 220px;
+    right: -90px;
     align-items: start;
     padding: 15px;
   }
@@ -412,44 +790,420 @@ background: none;
   /* habite section  */
   .habite {
     width: 100%;
-    margin-top:-80px;
-
+    margin-top: -100px;
+    padding: 20px;
   }
- .habite-content .section-title{
-  font-size: 2rem;
- }
-  
+  .habite-content .section-title {
+    font-size: 2rem;
+  }
+
   .habite-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
   }
- /* Run section */
-.run {
-  display: flex;
-  flex-direction:column;
-  padding: 30px;
-  margin-top: -100px;
-}
-.run-content {
-width: 100%;
+  /* Run section */
+  .run {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .run-content {
+    width: 100%;
+  }
+  .run-content h3 {
+    font-size: 2rem;
+  }
+  .run-content p br{
+    display: none;
+  }
+  .run-content button {
+    margin-top: 20px;
+    width: 100%;
+  }
 
+  .run-img {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 24px !important;
+    background: none;
+    overflow: hidden;
+  }
+
+  /* What's the benifite styles start */
+  .benifit {
+    width: 100%;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .benifit-header-content {
+    text-align: start;
+  }
+  .benifit-header-content h3 {
+    font-size: 2.5rem;
+  }
+  .benifit-main-content {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .benifit-content-1 {
+    width: 100%;
+    text-align: start;
+  }
+  .benifit-img {
+    width: 100%;
+  }
+  .benifit-img img {
+    width: 100%;
+  }
+  .benifit-content-2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* gym every day */
+  .gym {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .gym-content {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .gym-content button {
+    width: 100%;
+  }
+  .gym-content h3 {
+    font-size: 2.5rem;
+  }
+  .gym-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  /* BMI calculatur */
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    margin-bottom: 30px;
+    margin-top: -100px;
+  }
+  .header-content div{
+    width: 100%;
+  }
+  .header-content h3 {
+    font-size: 2.3rem;
+  }
+  .main-content .bmi-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .bmi-table {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .bmi-table h4 {
+    font-size: 1.5rem;
+  }
+  .bmi-table table td {
+    font-size: 0.9rem;
+  }
+  .bmi-calculator {
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+
+  .bmi-calculator .form {
+    background-color: var(--bg-color);
+    margin: 30px auto;
+  }
+  #sex {
+    width: 48%;
+  }
+  .form input {
+    width: 48%;
+  }
+  #height {
+    margin-right: 2%;
+  }
+  #age {
+    margin-right: 2%;
+  }
+
+  /* meat our team section */
+  .team {
+    width: 100%;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .team-content {
+    text-align: center;
+  }
+  .team-content h3 {
+    font-size: 2.3rem;
+  }
+  .team-img {
+    padding: 20px;
+  }
+  .team-img-row-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-img-row-2 > div {
+    margin-top: 20px;
+  }
+
+  .team-img-row-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .team-img-1 {
+    display: none;
+  }
+  .team-img-4 {
+    display: none;
+  }
+  /* footer section */
+  footer {
+    max-width: 100%;
+    background: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer {
+    max-width: 100%;
+    margin:0px;
+    background: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .foot-main {
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+    justify-content: start;
+    align-items: start;
+    background: none;
+  }
+  .foot-main div ul {
+    background: var(--bg-color);
+  }
+  .foot-main div ul li {
+    background: none;
+    list-style: none;
+  }
+  .foot-main-1 {
+    width: 100%;
+    background: var(--bg-color);
+  }
+  .foot-main-1 p br{
+    display: none;
+  }
+  .foot-main-1 h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--btn-color);
+    background-color: var(--bg-color);
+  }
+  .foot-main-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    background: var(--bg-color);
+  }
+  .foot-main-2 h4 {
+    font-size: 2.2rem;
+    background: var(--bg-color);
+    font-weight: 700px;
+    margin-bottom: 30px;
+    margin-left:0px;
+  }
+  .foot-main-2 li {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--secondery-color);
+  }
+  .foot-main-3 {
+    width: 100%;
+    flex-direction:column;
+    justify-content: start;
+    align-items: start;
+    background: var(--bg-color);
+  }
+  .foot-main-3 h4 {
+    font-size: 2.2rem;
+    background: var(--bg-color);
+    font-weight: 700px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .foot-main-3 li {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--secondery-color);
+  }
+  .footer hr {
+    margin: 70px auto 30px auto;
+  }
+  .foot-copy{
+    width: 100%;
+    text-align: start;
+    background: var(--bg-color);
+  }
+  
 }
-.run-content h3{
-  font-size: 2rem;
-}
-.run-content button{
-  margin-top: 20px;
-  width: 100%;;
+/* media query */
+
+/* mobile 375px media query */
+@media screen and (max-width:375px) {
+  .banner-img {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 70px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .updiv-1 {
+    position: absolute;
+    bottom: 30px;
+    right: 95px;
+    width: 10.06rem;
+  }
+  .updiv-2 {
+    width: 10.06rem;
+    position: absolute;
+    bottom: 215px;
+    right: -90px;
+    align-items: start;
+    padding: 15px;
+  }
+  .updiv-2 h4 {
+    text-align: start;
+  }
+  .updiv-2 p {
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .redius span i {
+    display: block;
+  }
+  .btn-2 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-1 {
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--btn-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content h3 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
 
-.run-img{
-  width: 100%;
-  height: 300px;
-  margin-top: 30px;
-  border-radius: 24px !important;
-  background: none;
-  overflow: hidden;
+/* mobile 320px media query */
+@media screen and (max-width:320px) {
+  .banner-img {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .updiv-1 {
+    position: absolute;
+    bottom: 30px;
+    right: 55px;
+    width: 10rem;
+  }
+  .updiv-2 {
+    width:9rem;
+    position: absolute;
+    bottom: 165px;
+    right: -80px;
+    align-items: start;
+    padding: 15px;
+  }
+  .updiv-2 h4 {
+    text-align: start;
+  }
+  .updiv-2 p {
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .redius span i {
+    display: block;
+  }
+  .btn-2 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-1 {
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--btn-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content h3 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
-}
-/* nav and banner media query */
