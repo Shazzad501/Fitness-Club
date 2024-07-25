@@ -570,6 +570,8 @@ p {
 
 /* Meet our team section style end */
 
+/* footer section style start */
+
 footer {
   width: 100%;
   background: var(--bg-color);
@@ -664,6 +666,10 @@ footer {
   font-size: 1.1rem;
   color: var(--secondery-color);
 }
+
+/* footer section style end */
+
+
 /* media query */
 @media screen and (max-width: 576px) {
   .navbar {
