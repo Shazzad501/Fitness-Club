@@ -988,6 +988,7 @@ footer {
     background: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: -80px;
   }
   .footer {
     max-width: 100%;
