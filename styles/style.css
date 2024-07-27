@@ -740,7 +740,7 @@ footer {
     padding-top: 70px;
   }
   .banner-img img {
-    width: 100%;
+    width:100%;
   }
   .updiv-1 {
     position: absolute;
@@ -963,7 +963,7 @@ footer {
     font-size: 2.3rem;
   }
   .team-img {
-    padding: 20px;
+    padding: 10px;
   }
   .team-img-row-1 {
     grid-template-columns: repeat(1, 1fr);
@@ -1212,4 +1212,426 @@ footer {
     font-size: 3rem;
     font-weight: 900;
   }
+}
+
+/* tablet 768px media query */
+@media screen and (min-width: 576px) and (max-width: 770px){
+  .navbar {
+    max-width: 100%;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .brand h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--btn-color);
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--default-color);
+  }
+  .banner-content {
+    text-align: center;
+    width: 100%;
+  }
+  .banner-content br:nth-child(1){ 
+    display: none;
+  }
+  .banner-content h3 {
+    font-size: 4.8rem;
+    font-weight: 900;
+  }
+  .banner-content h3 span {
+    font-family: "Dancing Script", cursive;
+  }
+  .banner-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2rem auto;
+  }
+  .banner-content p br{
+    display: none;
+  }
+  .btn-2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    margin-left: 1.25rem;
+  }
+  .banner-img {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 70px;
+  }
+  .banner-img img {
+    width:100%;
+  }
+  .updiv-1 {
+    position: absolute;
+    bottom: 85px;
+    right: 270px;
+    width: 12rem;
+  }
+  .updiv-2 {
+    width: 12rem;
+    position: absolute;
+    bottom: 380px;
+    right: -90px;
+    align-items: start;
+    padding: 15px;
+  }
+  .updiv-2 h4 {
+    text-align: start;
+  }
+  .updiv-2 p {
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .redius span i {
+    display: block;
+  }
+  .btn-2 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-1 {
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--btn-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content h3 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  /* habite section  */
+  .habite {
+    width: 100%;
+    margin-top: -100px;
+    padding: 20px;
+  }
+  .habite-content .section-title {
+    font-size: 2rem;
+  }
+
+  .habite-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  /* Run section */
+  .run {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .run-content {
+    width: 48%;
+  }
+  .run-content h3 {
+    font-size: 2rem;
+  }
+  .run-content p br{
+    display: none;
+  }
+  .run-content button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .run-img {
+    width: 48%;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 24px !important;
+    background: none;
+    overflow: hidden;
+  }
+
+  /* What's the benifite styles start */
+  .benifit {
+    width: 100%;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .benifit-header-content {
+    text-align: center;
+  }
+  .benifit-header-content h3 {
+    font-size: 2.5rem;
+  }
+  .benifit-main-content {
+    flex-direction: row;
+    padding: 0px;
+  }
+  .benifit-content-1 {
+    width: 33%;
+    text-align: start;
+  }
+  .benifit-img {
+    max-width: 33%;
+  }
+  .benifit-img img {
+    width:100%;
+  }
+  .benifit-content-2 {
+    width: 33%;
+    margin-top: 30px;
+  }
+
+  /* gym every day */
+  .gym {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .gym-content {
+    max-width: 49%;
+    padding-left: 0px;
+  }
+  .gym-content button {
+    width: 100%;
+  }
+  .gym-content h3 {
+    font-size: 2.5rem;
+  }
+  .gym-img {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .gym-img img{
+    max-width:100%;
+  }
+  /* BMI calculatur */
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -60px;
+  }
+  .header-content div{
+    width: 100%;
+  }
+  .header-content h3 {
+    font-size: 2.3rem;
+  }
+  .main-content .bmi-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .bmi-table {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .bmi-table h4 {
+    font-size: 1.5rem;
+  }
+  .bmi-table table td {
+    font-size: 0.9rem;
+  }
+  .bmi-calculator {
+    width: 100%;
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+
+  .bmi-calculator .form {
+    background-color: var(--bg-color);
+    margin: 30px auto;
+  }
+  .bmi-calculator button{
+    width:40%;
+  }
+  #sex {
+    width: 49%;
+  }
+  .form input {
+    width: 49%;
+  }
+  #height {
+    margin-right: 1%;
+  }
+  #age {
+    margin-right: 1%;
+  }
+
+  /* meat our team section */
+  .team {
+    width: 100%;
+    padding: 20px;
+    margin-top: -100px;
+  }
+  .team-content {
+    text-align: center;
+  }
+  .team-content h3 {
+    font-size: 2.3rem;
+  }
+  .team-img {
+    padding: 10px;
+  }
+  .team-img-row-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-img-row-2 > div {
+    margin-top: 20px;
+  }
+
+  .team-img-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .team-img-1 {
+    display: none;
+  }
+  .team-img-4 {
+    display: none;
+  }
+  /* footer section */
+  footer {
+    max-width: 100%;
+    background: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: -80px;
+  }
+  .footer {
+    max-width: 100%;
+    margin:0px;
+    background: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .foot-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    background: none;
+  }
+  .foot-main div ul {
+    background: var(--bg-color);
+  }
+  .foot-main div ul li {
+    background: none;
+    list-style: none;
+  }
+  .foot-main-1 {
+    width: 100%;
+    text-align: center;
+    background: var(--bg-color);
+  }
+  .foot-main-1 p br{
+    display: none;
+  }
+  .foot-main-1 h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--btn-color);
+    background-color: var(--bg-color);
+  }
+  .foot-main-2 {
+    width:48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background: var(--bg-color);
+  }
+  .foot-main-2 h4 {
+    font-size: 2.2rem;
+    background: var(--bg-color);
+    font-weight: 700px;
+    margin-bottom: 30px;
+    margin-left:0px;
+  }
+  .foot-main-2 li {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--secondery-color);
+  }
+  .foot-main-3 {
+    width:48%;
+    text-align: center;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+  }
+  .foot-main-3 h4 {
+    font-size: 2.2rem;
+    background: var(--bg-color);
+    font-weight: 700px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .foot-main-3 li {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--secondery-color);
+  }
+  .footer hr {
+    margin: 70px auto 30px auto;
+  }
+  .foot-copy{
+    width: 100%;
+    text-align: center;
+    background: var(--bg-color);
+  }
+  
 }
