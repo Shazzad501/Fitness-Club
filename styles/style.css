@@ -848,6 +848,9 @@ footer {
   .benifit-header-content {
     text-align: start;
   }
+  .benifit-header-content br{
+    display: none;
+  }
   .benifit-header-content h3 {
     font-size: 2.5rem;
   }
