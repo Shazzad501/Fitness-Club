@@ -852,7 +852,7 @@ footer {
     display: none;
   }
   .benifit-header-content h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .benifit-main-content {
     flex-direction: column;
@@ -971,13 +971,33 @@ footer {
   .team-img-row-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .team-img-row-2 > div {
-    margin-top: 20px;
+  .team-img-row-1 > div{
+    height: 270px;
+  }
+
+  .team-img-row-1 div div span{
+    display: none;
+  }
+  .team-img-row-1 div div {
+    position: absolute;
+    background: none;
+    top: 200px;
+    left: 30px;
   }
 
   .team-img-row-2 {
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
+  }
+  .team-img-row-2 > div {
+    margin-top: 20px;
+    height:270px;
+  }
+  .team-img-row-2 div div {
+    position: absolute;
+    background: none;
+    top: 200px;
+    left: 30px;
   }
   .team-img-1 {
     display: none;
